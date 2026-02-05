@@ -199,9 +199,18 @@ h1, h2, h3, h4, h5, h6 {
     gap: 12px;
 }
 
-.nav__logo img {
-    height: 48px;
+.nav__logo-img {
+    height: 56px;
     width: auto;
+    max-width: 280px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .nav__logo-img {
+        height: 44px;
+        max-width: 200px;
+    }
 }
 
 .nav__logo-text {
@@ -967,8 +976,19 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.5rem;
 }
 
-.footer__logo img {
-    height: 48px;
+.footer__logo-img {
+    height: 60px;
+    width: auto;
+    max-width: 280px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px) {
+    .footer__logo-img {
+        height: 48px;
+        max-width: 220px;
+    }
 }
 
 .footer__description {
